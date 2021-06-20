@@ -21,7 +21,7 @@ class ThirdFragment : Fragment() {
 
         if (isAdded) {
             val viewModel: VPViewModel by requireActivity().viewModel()
-            viewModel.counterLDState.observe(viewLifecycleOwner, {
+            viewModel.countLDState.observe(viewLifecycleOwner, {
                 ui.textView3.text = it.toString()
             })
         }
